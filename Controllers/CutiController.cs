@@ -42,6 +42,7 @@ namespace API.Controllers
             var data = myContext.Cuti.Find(id);
             data.StartDate = cuti.StartDate;
             data.EndDate = cuti.EndDate;
+            data.Status = cuti.Status;
             data.IdKaryawan = cuti.IdKaryawan;
             data.IdJenisCuti = cuti.IdJenisCuti;
             myContext.Cuti.Update(data);
